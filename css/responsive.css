@@ -1,0 +1,276 @@
+/* ========== Responsive Styles ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 5%;
+  }
+  
+  section {
+    padding: 100px 5% 60px;
+  }
+  
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    border-top: 1px solid #00ffee;
+    display: none;
+    flex-direction: column;
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+  
+  .navbar a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 5% 60px;
+  }
+  
+  .home-img {
+    display: none;
+  }
+
+  .home-content {
+    order: 1;
+    max-width: 100%;
+  }
+  
+  .home-logo-mobile {
+    display: block;
+    order: 2;
+    margin-top: 30px;
+  }
+  
+  .home-logo-mobile img {
+    width: 250px;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
+  }
+  
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 80vw;
+    max-width: 280px;
+  }
+  
+  .about-buttons {
+    justify-content: center;
+  }
+  
+  .hobbies-container,
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .input-group {
+    grid-template-columns: 1fr;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+  
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-info,
+  .contact-form {
+    text-align: center;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .contact-item i {
+    margin-right: 0;
+  }
+  
+  /* Copyright Section Mobile */
+  .copyright {
+    padding: 80px 5% 60px;
+  }
+  
+  .copyright-content {
+    padding: 25px 20px;
+  }
+  
+  .copyright-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .guarantee-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .step {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .stories {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-section {
+    padding: 25px 20px;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 4%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 100px 4% 40px;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+  
+  .home-logo-mobile img {
+    width: 200px;
+  }
+  
+  .btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+  
+  .social-media a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .hobbies-box,
+  .contact-form {
+    padding: 25px 20px;
+  }
+  
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+  
+  /* Copyright Section Small Mobile */
+  .copyright {
+    padding: 60px 4% 40px;
+  }
+  
+  .copyright-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .service-card {
+    padding: 20px 15px;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .btn-whatsapp {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .header {
+    padding: 15px 10%;
+  }
+  
+  section {
+    padding: 100px 10% 60px;
+  }
+  
+  .home-content {
+    max-width: 600px;
+  }
+  
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Height adjustments for mobile */
+@media (max-height: 700px) {
+  section {
+    min-height: auto;
+    padding: 120px 5% 40px;
+  }
+  
+  .home {
+    min-height: auto;
+  }
+}
